@@ -1,0 +1,12 @@
+<div class="p-2 h-[250px] text-center bg-gray-900">
+  <shared-lazy-image
+    [url]="gif1.images.original.url"
+    [alt]="gif1.title || 'No title'"
+  >
+  </shared-lazy-image>
+  <!-- <img class="h-3/4" [src]="gif1.images.original.url" /> -->
+  <div class="text-white text-center h-1/4">
+    <p>{{ gif1.title || "no-title" }}</p>
+  </div>
+</div>
+<!-- crear imagen -->

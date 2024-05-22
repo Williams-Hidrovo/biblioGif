@@ -1,0 +1,13 @@
+<div class="bg-gray-900 border-r-2 h-full w-[240px] p-3 fixed" id="sidebar">
+  <h3 class="text-4xl text-white mb-2">BiblioGif</h3>
+  <hr class="text-white" />
+  <div class="flex flex-col mt-2 border-2 bg-white rounded-[5px] px-2">
+    <button
+      *ngFor="let tag of tags"
+      (click)="searchTag(tag)"
+      class="bg-[rgb(255,255,255)] border-b-2 border-gray-200 w-full h-[40px] hover:bg-gray-200"
+    >
+      {{ tag | titlecase }}
+    </button>
+  </div>
+</div>
